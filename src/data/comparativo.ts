@@ -35,7 +35,7 @@ export const idadesMinimas: IdadeMinima[] = [
   {
     plataformaId: 'steam',
     idade: '13 anos',
-    observacao: 'A conta é da família; o acesso do menor é controlado pelo Family View.',
+    observacao: 'A criança tem conta própria, vinculada à Família Steam do responsável.',
   },
   {
     plataformaId: 'tiktok',
@@ -68,7 +68,7 @@ export const linhasComparativo: LinhaComparativo[] = [
       youtube: { status: 'parcial', nota: 'Vídeos e playlists podem ser privados' },
       netflix: { status: 'nao', nota: 'Não há publicação de conteúdo' },
       tiktok: { status: 'sim', nota: 'Padrão para contas de 13 a 15 anos' },
-      steam: { status: 'sim', nota: 'Perfil e lista de amigos privados' },
+      steam: { status: 'sim', nota: 'Perfil e amigos pelos controles parentais' },
     },
   },
   {
@@ -80,7 +80,7 @@ export const linhasComparativo: LinhaComparativo[] = [
       youtube: { status: 'sim', nota: 'Family Link' },
       netflix: { status: 'parcial', nota: 'Perfil infantil, sem conta separada' },
       tiktok: { status: 'sim', nota: 'Sincronização Familiar' },
-      steam: { status: 'parcial', nota: 'Family View protegido por PIN' },
+      steam: { status: 'sim', nota: 'Família Steam, com conta própria' },
     },
   },
   {
@@ -92,7 +92,7 @@ export const linhasComparativo: LinhaComparativo[] = [
       youtube: { status: 'sim', nota: 'Limite e bloqueio noturno via Family Link' },
       netflix: { status: 'nao', nota: 'Depende do limite do próprio celular' },
       tiktok: { status: 'sim', nota: 'Limite diário e horário de descanso' },
-      steam: { status: 'nao', nota: 'Depende do limite do próprio computador' },
+      steam: { status: 'sim', nota: 'Limites por dia da semana' },
     },
   },
   {
@@ -104,7 +104,7 @@ export const linhasComparativo: LinhaComparativo[] = [
       youtube: { status: 'sim', nota: 'Modo Restrito e faixas do YouTube Kids' },
       netflix: { status: 'sim', nota: 'Classificação indicativa por perfil' },
       tiktok: { status: 'sim', nota: 'Filtros de vídeo por palavra-chave' },
-      steam: { status: 'sim', nota: 'Biblioteca limitada pelo Family View' },
+      steam: { status: 'sim', nota: 'Jogos permitidos e filtros de conteúdo' },
     },
   },
   {
@@ -116,7 +116,7 @@ export const linhasComparativo: LinhaComparativo[] = [
       youtube: { status: 'parcial', nota: 'Comentários; não há mensagem privada' },
       netflix: { status: 'nao', nota: 'Não há contato entre usuários' },
       tiktok: { status: 'sim', nota: 'Mensagens limitadas ou desativadas' },
-      steam: { status: 'sim', nota: 'Bloqueio de chat e Comunidade' },
+      steam: { status: 'sim', nota: 'Bloqueio de chat, amigos e grupos' },
     },
   },
   {
@@ -128,7 +128,7 @@ export const linhasComparativo: LinhaComparativo[] = [
       youtube: { status: 'sim', nota: 'Aprovação de compras pelo Family Link' },
       netflix: { status: 'parcial', nota: 'PIN protege a troca de plano' },
       tiktok: { status: 'parcial', nota: 'Depende da trava da loja do celular' },
-      steam: { status: 'sim', nota: 'PIN obrigatório na loja' },
+      steam: { status: 'sim', nota: 'Pedidos aprovados pelo responsável' },
     },
   },
   {
@@ -140,7 +140,7 @@ export const linhasComparativo: LinhaComparativo[] = [
       youtube: { status: 'sim', nota: 'Histórico completo de visualização' },
       netflix: { status: 'sim', nota: 'Histórico por perfil' },
       tiktok: { status: 'parcial', nota: 'Curtidas e atividade da conta' },
-      steam: { status: 'sim', nota: 'Tempo de jogo por título' },
+      steam: { status: 'sim', nota: 'Tempo de jogo e histórico da família' },
     },
   },
 ];

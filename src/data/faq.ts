@@ -41,7 +41,7 @@ export const faqItems: FaqItem[] = [
     icon: KeyRound,
     pergunta: 'Preciso saber a senha do meu filho para ativar o controle parental?',
     resposta:
-      'Na maioria dos casos, não. Instagram, TikTok e YouTube usam um sistema de convite: você envia um pedido de supervisão pela sua própria conta e a criança aceita no aparelho dela. Netflix e Steam funcionam de outro jeito, porque a conta é única da família — nesses dois você configura tudo pela conta principal e protege com um PIN que só você conhece.',
+      'Na maioria dos casos, não. Instagram, TikTok, YouTube e Steam usam um sistema de convite: você envia um pedido pela sua própria conta e a criança aceita no aparelho dela. A Netflix funciona de outro jeito, porque a conta é única da família — nela você configura tudo pela conta principal e protege com um PIN que só você conhece.',
   },
   {
     icon: Unlock,

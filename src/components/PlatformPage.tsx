@@ -38,7 +38,7 @@ export function PlatformPage({ platform, onBack }: PlatformPageProps) {
 
         <div className="grid gap-8 lg:grid-cols-2">
           <div>
-            <h3 className="mb-5 text-lg font-bold text-slate-900">Passo a passo</h3>
+            <h3 className="mb-5 text-lg font-bold text-slate-900">Como configurar</h3>
             <ol className="space-y-4">
               {platform.steps.map((step, index) => (
                 <li
