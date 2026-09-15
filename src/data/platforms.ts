@@ -216,7 +216,7 @@ export const plataformas: Platform[] = [
       {
         title: 'Abra o gerenciamento da família',
         description:
-          'De volta na conta do responsável, clique em "Steam", depois em "Configurações", acesse "Família e compartilhamento" e escolha "Gerenciar a Família Steam". A página reúne cinco áreas: Pedidos, com as solicitações de compra e de acesso feitas pela criança; Biblioteca, com os jogos incluídos na Família Steam; Tempo de jogo, com as horas de cada membro nos últimos dias; Histórico, com tudo que foi alterado; e Gerenciar, onde ficam os controles de cada perfil.',
+          'De volta na conta do responsável, clique em "Steam", depois em "Configurações", acesse "Família e compartilhamento" e escolha "Gerenciar a Família Steam". A página reúne cinco áreas: Gerenciar, onde ficam os controles de cada perfil; Biblioteca, com os jogos incluídos na Família Steam; Pedidos, com as solicitações de compra e de acesso feitas pela criança; Tempo de jogo, com as horas de cada membro nos últimos dias; e Histórico, com tudo que foi alterado.',
       },
       {
         title: 'Escolha quais jogos o menor pode acessar',
