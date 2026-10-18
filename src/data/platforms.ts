@@ -172,17 +172,17 @@ export const plataformas: Platform[] = [
       {
         title: 'Defina a classificação etária',
         description:
-          'Em "Minha Netflix", clique em "Gerenciar perfis" e escolha o perfil da criança. Abra "Classificação etária" e depois "Configurações da conta" — a Netflix leva você ao navegador. Selecione a classificação máxima permitida e salve.',
+          'Em "Minha Netflix", selecione o seu perfil, clique em "Gerenciar perfis" e escolha o perfil da criança. Abra "Classificação etária" e depois "Configurações da conta" — a Netflix leva você ao navegador. Selecione a classificação máxima permitida e salve.',
       },
       {
         title: 'Ative o bloqueio de perfil por PIN',
         description:
-          'Em "Minha Netflix", clique em "Conta" e depois em "Configurações de privacidade e dados". Escolha "Bloqueio de perfil", clique em "Criar bloqueio de perfil" e confirme a senha da conta. Digite o PIN desejado e clique em salvar. Coloque o PIN nos perfis de adulto: é ele que impede a criança de sair do perfil infantil.',
+          'Em "Minha Netflix", selecione o seu perfil, clique em "Conta" e depois em "Configurações de privacidade e dados". Escolha "Bloqueio de perfil", clique em "Criar bloqueio de perfil" e confirme a senha da conta. Digite o PIN desejado e clique em salvar. Coloque o PIN nos perfis de adulto: é ele que impede a criança de sair do perfil infantil.',
       },
       {
         title: 'Bloqueie títulos específicos',
         description:
-          'Em "Minha Netflix", clique em "Gerenciar perfis", selecione o perfil da criança e abra "Restrições de visualização". Clique em "Bloquear títulos" e digite o nome do filme ou da série. Ele deixa de aparecer até na busca.',
+          'Em "Minha Netflix", selecione o seu perfil, clique em "Gerenciar perfis", selecione o perfil da criança e abra "Restrições de visualização". Clique em "Bloquear títulos" e digite o nome do filme ou da série. Ele deixa de aparecer até na busca.',
       },
       {
         title: 'Desative a reprodução automática de episódios',
