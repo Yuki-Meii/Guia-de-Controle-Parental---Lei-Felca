@@ -1,4 +1,5 @@
 import { ArrowLeft, CheckCircle2, Clapperboard } from 'lucide-react';
+import { CarrosselPassos, TituloCarrossel } from '@/components/CarrosselPassos';
 import type { Platform } from '@/data/platforms';
 
 interface PlatformPageProps {
@@ -92,6 +93,16 @@ export function PlatformPage({ platform, onBack }: PlatformPageProps) {
                 </div>
               )}
             </div>
+
+            {platform.imagens && platform.imagens.length > 0 && (
+              <div>
+                <TituloCarrossel total={platform.imagens.length} />
+                <CarrosselPassos
+                  imagens={platform.imagens}
+                  gradient={platform.gradient}
+                />
+              </div>
+            )}
 
             <div>
               <h3 className="mb-5 text-lg font-bold text-slate-900">Recursos recomendados</h3>

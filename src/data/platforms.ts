@@ -17,6 +17,15 @@ export interface PlatformVideo {
   src: string;
 }
 
+/** Imagem do passo a passo, exibida no carrossel abaixo do vídeo. */
+export interface PlatformImage {
+  src: string;
+  /** Número do passo que a imagem ilustra, conforme a lista de configurações. */
+  passo: number;
+  /** Legenda curta, exibida abaixo da imagem. */
+  legenda: string;
+}
+
 export interface Platform {
   id: string;
   nome: string;
@@ -30,6 +39,8 @@ export interface Platform {
   recursos: string[];
   /** Quando ausente, a página exibe o aviso de vídeo em produção. */
   video?: PlatformVideo;
+  /** Quando ausente, o carrossel de imagens não é exibido. */
+  imagens?: PlatformImage[];
 }
 
 // Para vincular a videoaula de um tutorial, preencha a chave "video" com o título e
@@ -190,8 +201,30 @@ export const plataformas: Platform[] = [
     ],
     video: {
       title: 'Como configurar o controle parental da Netflix',
-      src: 'https://www.youtube-nocookie.com/embed/kBv7ZddjbEc',
+      src: 'https://www.youtube-nocookie.com/embed/2b7xvST175A',
     },
+    imagens: [
+      { passo: 1, src: '/passos/netflix/passo1-01-tela-de-perfis.webp', legenda: 'A tela de escolha de perfil, ao abrir o aplicativo.' },
+      { passo: 1, src: '/passos/netflix/passo1-02-tocar-em-adicionar.webp', legenda: 'Em "Minha Netflix", toque em "Adicionar".' },
+      { passo: 1, src: '/passos/netflix/passo1-03-nome-e-perfil-para-criancas.webp', legenda: 'Dê um nome e ative "Perfil para crianças".' },
+      { passo: 1, src: '/passos/netflix/passo1-04-perfil-criado.webp', legenda: 'O perfil infantil passa a aparecer na lista.' },
+      { passo: 1, src: '/passos/netflix/passo1-05-avatar-infantil.webp', legenda: 'O avatar ganha o selo "Infantil".' },
+      { passo: 2, src: '/passos/netflix/passo2-01-gerenciar-perfis.webp', legenda: 'Em "Minha Netflix", toque em "Gerenciar perfis".' },
+      { passo: 2, src: '/passos/netflix/passo2-02-editar-perfil.webp', legenda: 'Na edição do perfil, abra "Classificação etária".' },
+      { passo: 2, src: '/passos/netflix/passo2-03-abrir-no-navegador.webp', legenda: 'A Netflix pede para abrir o navegador. É normal.' },
+      { passo: 2, src: '/passos/netflix/passo2-04-lista-de-classificacoes.webp', legenda: 'No navegador, selecione a classificação máxima.' },
+      { passo: 2, src: '/passos/netflix/passo2-05-titulos-restritos.webp', legenda: 'Abaixo da lista ficam os títulos restritos.' },
+      { passo: 3, src: '/passos/netflix/passo3-01-criar-bloqueio-de-perfil.webp', legenda: 'Em "Criar bloqueio de perfil", confirme a senha da conta.' },
+      { passo: 3, src: '/passos/netflix/passo3-02-bloqueio-ativado.webp', legenda: 'Com o PIN salvo, o bloqueio aparece como ativado.' },
+      { passo: 4, src: '/passos/netflix/passo4-01-restricoes-de-visualizacao.webp', legenda: 'Em "Restrições de visualização", abra "Bloquear títulos".' },
+      { passo: 4, src: '/passos/netflix/passo4-02-bloquear-titulos.webp', legenda: 'O campo de busca de títulos, ainda vazio.' },
+      { passo: 4, src: '/passos/netflix/passo4-03-digitar-o-titulo.webp', legenda: 'Digite o nome do filme ou da série.' },
+      { passo: 4, src: '/passos/netflix/passo4-04-titulo-bloqueado.webp', legenda: 'O título entra na lista de bloqueados.' },
+      { passo: 4, src: '/passos/netflix/passo4-05-sumiu-da-busca.webp', legenda: 'Na busca do perfil, o título já não aparece.' },
+      { passo: 5, src: '/passos/netflix/passo5-01-opcoes-ligadas.webp', legenda: 'No fim de "Editar perfil", as duas opções vêm ligadas.' },
+      { passo: 5, src: '/passos/netflix/passo5-02-proximo-episodio-desligado.webp', legenda: 'Desligue a reprodução automática do próximo episódio.' },
+      { passo: 6, src: '/passos/netflix/passo6-01-previas-desligadas.webp', legenda: 'Desligue também a reprodução automática das prévias.' },
+    ],
   },
   {
     id: 'steam',
