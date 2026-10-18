@@ -97,9 +97,13 @@ export function PlatformPage({ platform, onBack }: PlatformPageProps) {
             {platform.imagens && platform.imagens.length > 0 && (
               <div>
                 <TituloCarrossel total={platform.imagens.length} />
+                {/* A chave reinicia o carrossel ao trocar de plataforma:
+                    sem ela, o índice da anterior permanece e pode ficar fora da lista. */}
                 <CarrosselPassos
+                  key={platform.id}
                   imagens={platform.imagens}
                   gradient={platform.gradient}
+                  formato={platform.formatoImagens}
                 />
               </div>
             )}

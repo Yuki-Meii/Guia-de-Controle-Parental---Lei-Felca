@@ -6,9 +6,15 @@ interface CarrosselPassosProps {
   imagens: PlatformImage[];
   /** Gradiente da plataforma, usado na etiqueta do passo. */
   gradient: string;
+  /** Capturas de celular ficam estreitas; as de computador ocupam a largura toda. */
+  formato?: 'retrato' | 'paisagem';
 }
 
-export function CarrosselPassos({ imagens, gradient }: CarrosselPassosProps) {
+export function CarrosselPassos({
+  imagens,
+  gradient,
+  formato = 'retrato',
+}: CarrosselPassosProps) {
   const [atual, setAtual] = useState(0);
   const toqueInicial = useRef<number | null>(null);
 
@@ -47,48 +53,33 @@ export function CarrosselPassos({ imagens, gradient }: CarrosselPassosProps) {
       aria-label="Imagens do passo a passo"
       tabIndex={0}
       onKeyDown={aoTeclar}
-      className="rounded-2xl bg-slate-900 p-3 ring-1 ring-slate-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
+      onTouchStart={aoEncostar}
+      onTouchEnd={aoSoltar}
+      className={`mx-auto w-full focus:outline-none ${
+        formato === 'retrato' ? 'max-w-[250px] sm:max-w-[290px]' : 'max-w-full'
+      }`}
     >
-      <div
-        className="relative flex h-[400px] items-center justify-center sm:h-[460px]"
-        onTouchStart={aoEncostar}
-        onTouchEnd={aoSoltar}
+      {/* A moldura acompanha a imagem: dentro de cada plataforma elas têm o mesmo tamanho. */}
+      <a
+        href={imagem.src}
+        target="_blank"
+        rel="noreferrer"
+        title="Abrir a imagem em tamanho maior"
+        className="block overflow-hidden rounded-2xl ring-1 ring-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
       >
-        <a
-          href={imagem.src}
-          target="_blank"
-          rel="noreferrer"
-          title="Abrir a imagem em tamanho maior"
-          className="h-full rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
-        >
-          <img
-            key={imagem.src}
-            src={imagem.src}
-            alt={`Passo ${imagem.passo}: ${imagem.legenda}`}
-            loading={atual === 0 ? 'eager' : 'lazy'}
-            className="h-full w-auto rounded-xl object-contain"
-          />
-        </a>
+        <img
+          key={imagem.src}
+          src={imagem.src}
+          alt={`Passo ${imagem.passo}: ${imagem.legenda}`}
+          width={formato === 'retrato' ? 480 : 960}
+          height={formato === 'retrato' ? 1040 : 540}
+          loading={atual === 0 ? 'eager' : 'lazy'}
+          className="block w-full"
+        />
+      </a>
 
-        <button
-          onClick={() => mover(-1)}
-          aria-label="Imagem anterior"
-          className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-slate-800/80 text-white backdrop-blur transition hover:bg-slate-700"
-        >
-          <ChevronLeft size={20} />
-        </button>
-
-        <button
-          onClick={() => mover(1)}
-          aria-label="Próxima imagem"
-          className="absolute right-0 flex h-10 w-10 items-center justify-center rounded-full bg-slate-800/80 text-white backdrop-blur transition hover:bg-slate-700"
-        >
-          <ChevronRight size={20} />
-        </button>
-      </div>
-
-      <div aria-live="polite" className="mt-3 px-1">
-        <div className="mb-1.5 flex items-center justify-between gap-3">
+      <div aria-live="polite" className="mt-3">
+        <div className="mb-1.5 flex items-center justify-between gap-2">
           <span
             className={`rounded-full bg-gradient-to-r ${gradient} px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white`}
           >
@@ -98,21 +89,39 @@ export function CarrosselPassos({ imagens, gradient }: CarrosselPassosProps) {
             {atual + 1} / {total}
           </span>
         </div>
-        <p className="text-sm leading-relaxed text-slate-300">{imagem.legenda}</p>
+        <p className="text-sm leading-relaxed text-slate-600">{imagem.legenda}</p>
       </div>
 
-      <div className="mt-3 flex flex-wrap gap-1.5 px-1">
-        {imagens.map((img, i) => (
-          <button
-            key={img.src}
-            onClick={() => setAtual(i)}
-            aria-label={`Ir para a imagem ${i + 1}, do passo ${img.passo}`}
-            aria-current={i === atual}
-            className={`h-1.5 flex-1 rounded-full transition-colors ${
-              i === atual ? 'bg-sky-400' : 'bg-slate-700 hover:bg-slate-600'
-            }`}
-          />
-        ))}
+      <div className="mt-3 flex items-center gap-2">
+        <button
+          onClick={() => mover(-1)}
+          aria-label="Imagem anterior"
+          className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-600 transition hover:bg-slate-200 hover:text-slate-900"
+        >
+          <ChevronLeft size={18} />
+        </button>
+
+        <div className="flex flex-1 gap-1">
+          {imagens.map((img, i) => (
+            <button
+              key={img.src + i}
+              onClick={() => setAtual(i)}
+              aria-label={`Ir para a imagem ${i + 1}, do passo ${img.passo}`}
+              aria-current={i === atual}
+              className={`h-1.5 flex-1 rounded-full transition-colors ${
+                i === atual ? 'bg-sky-500' : 'bg-slate-200 hover:bg-slate-300'
+              }`}
+            />
+          ))}
+        </div>
+
+        <button
+          onClick={() => mover(1)}
+          aria-label="Próxima imagem"
+          className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-600 transition hover:bg-slate-200 hover:text-slate-900"
+        >
+          <ChevronRight size={18} />
+        </button>
       </div>
     </section>
   );
