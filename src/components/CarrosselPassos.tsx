@@ -71,8 +71,9 @@ export function CarrosselPassos({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ampliada, total]);
 
+  // Translúcidas para não esconder a imagem; o desfoque atrás mantém o ícone legível.
   const setaLateral =
-    'absolute top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-slate-900/70 text-white shadow-lg ring-1 ring-white/20 backdrop-blur transition hover:bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400';
+    'absolute top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-slate-900/30 text-white ring-1 ring-white/25 backdrop-blur-sm transition hover:bg-slate-900/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400';
 
   return (
     <>
@@ -109,10 +110,10 @@ export function CarrosselPassos({
           </button>
 
           <button onClick={() => mover(-1)} aria-label="Imagem anterior" className={`${setaLateral} left-2`}>
-            <ChevronLeft size={20} />
+            <ChevronLeft size={20} className="drop-shadow-md" />
           </button>
           <button onClick={() => mover(1)} aria-label="Próxima imagem" className={`${setaLateral} right-2`}>
-            <ChevronRight size={20} />
+            <ChevronRight size={20} className="drop-shadow-md" />
           </button>
         </div>
 
@@ -195,10 +196,10 @@ export function CarrosselPassos({
                 className="max-h-[78vh] w-auto max-w-[92vw] rounded-xl object-contain shadow-2xl"
               />
               <button onClick={() => mover(-1)} aria-label="Imagem anterior" className={`${setaLateral} left-2`}>
-                <ChevronLeft size={20} />
+                <ChevronLeft size={20} className="drop-shadow-md" />
               </button>
               <button onClick={() => mover(1)} aria-label="Próxima imagem" className={`${setaLateral} right-2`}>
-                <ChevronRight size={20} />
+                <ChevronRight size={20} className="drop-shadow-md" />
               </button>
             </div>
 
