@@ -56,39 +56,49 @@ export const plataformas: Platform[] = [
     icon: Instagram,
     color: 'text-pink-600',
     gradient: 'from-pink-500 via-rose-500 to-orange-400',
-    tagline: 'Privacidade e supervisão familiar',
+    tagline: 'Conta privada e Supervisão',
     descricao:
-      'Configure a conta como privada, gerencie mensagens de desconhecidos e ative a supervisão familiar para proteger menores no Instagram.',
+      'Deixe a conta privada, restrinja mensagens, comentários e marcações, ative a Supervisão e defina o tempo de uso da conta do adolescente.',
     steps: [
       {
-        title: 'Defina a conta como privada',
+        title: 'Deixe a conta privada',
         description:
-          'Vá em Configurações > Privacidade > Privacidade da conta e ative "Conta privada". Assim, apenas seguidores aprovados poderão ver suas publicações.',
+          'Na conta do menor, toque na foto do perfil, no canto inferior direito, e em seguida nos três riscos. Desça até "Privacidade da conta" e ative "Conta privada". Assim, só quem for aprovado como seguidor poderá ver as publicações, os seguidores e quem o perfil segue.',
       },
       {
-        title: 'Controle mensagens de desconhecidos',
+        title: 'Controle quem pode mandar mensagem',
         description:
-          'Em Configurações > Privacidade > Mensagens, escolha quem pode enviar mensagens diretas e solicitações de mensagem, restringindo contatos não seguidores.',
+          'Ainda em "Configurações e atividade", procure "Mensagens e respostas a stories". Ali você decide quem pode enviar mensagem, adicionar a grupos e responder a stories, além de ativar a proteção contra nudez. O indicado é deixar tudo como "Pessoas que você segue" ou "Ninguém". Em "Pedidos de contato" dá para ocultar os pedidos indesejados, e em "Mostrar status da atividade" você esconde quando o perfil está online.',
       },
       {
-        title: 'Gerencie comentários e marcações',
+        title: 'Filtre comentários e palavras',
         description:
-          'Em Privacidade > Comentários, bloqueie ou restrinja comentários de pessoas específicas e filtre palavras ofensivas automaticamente.',
+          'Em "Configurações e atividade", abra "Comentários". Ali você bloqueia comentários de usuários específicos, decide quem pode comentar em stories, posts e reels, e manda ocultar mais comentários que o Instagram considerar ofensivos. Desative também os comentários com GIFs e com foto. Em "Palavras ocultas", escreva a lista de palavras a bloquear: elas passam a ser censuradas nos comentários, e mensagens com essas palavras vão para a pasta de spam.',
       },
       {
-        title: 'Ative a Supervisão Familiar',
+        title: 'Filtre marcações e menções',
         description:
-          'Acesse Configurações > Supervisão para vincular a conta de um adolescente, permitindo definir limites de tempo, ver contatos e configurar alertas de segurança.',
+          'Ainda em "Configurações e atividade", abra "Marcações e menções". Escolha quem pode marcar o perfil, ative a aprovação manual e defina quem poderá mencioná-lo. Desta forma, as atrelações ao perfil ficam mais limitadas.',
       },
       {
-        title: 'Configure a opção "Tempo de uso"',
+        title: 'Ative a Supervisão',
         description:
-          'Acompanhe o tempo gasto no app diariamente e defina lembretes diários para pausar a utilização e manter um uso saudável.',
+          'Este é o passo mais importante, porque é ele que liga a sua conta à do adolescente. Para funcionar, as duas contas precisam se seguir. Na sua conta, abra "Configurações e atividade" e toque em "Supervisão para Contas de Adolescente". Clique em "Continuar", selecione o perfil do menor e em "Enviar convite". Na conta dele, em "Supervisão", o pedido aparece como pendente: basta abrir e clicar em "Aceitar".',
       },
       {
-        title: 'Revise tags e stories',
+        title: 'Defina o limite de tempo',
         description:
-          'Em Privacidade > Marcações, configure a aprovação manual de tags em fotos e limite quem pode ver e compartilhar seus stories.',
+          'Com a supervisão ligada, abra o painel de supervisão em "Configurações e atividade", selecione o perfil do menor e acesse "Tempo de uso" e "Gerenciamento de tempo". Ali você define um limite diário de uso e os horários de pausa, em que o aplicativo fica bloqueado, como durante a noite.',
+      },
+      {
+        title: 'Revise o compartilhamento dos stories',
+        description:
+          'Ainda na conta do adolescente, volte em "Configurações e atividade" e abra "Compartilhamento e reutilização". Ali você limita se as pessoas podem compartilhar os stories do perfil em mensagens ou nos próprios stories, e se podem compartilhar ou repostar as publicações.',
+      },
+      {
+        title: 'Use o painel de supervisão',
+        description:
+          'Pelo painel de supervisão, em "Configurações e atividade", dá para ajustar o que não foi feito pelo perfil do menor: com quem ele conversa, quem são seus seguidores e quem ele segue, com quem compartilha a localização, quais contas estão bloqueadas, o tempo de uso, a privacidade do perfil, que tipo de conteúdo ele vê — como a faixa etária e a proteção contra nudez — e se ele pode fazer alterações sem a sua aprovação.',
       },
     ],
     recursos: [
@@ -101,6 +111,42 @@ export const plataformas: Platform[] = [
       title: 'Como configurar a privacidade do Instagram',
       src: 'https://www.youtube-nocookie.com/embed/8mReUcz2lwE',
     },
+    imagens: [
+      { passo: 1, src: '/passos/instagram/p1-01.webp', legenda: 'Na conta do menor, toque na foto do perfil e depois nos três riscos.' },
+      { passo: 1, src: '/passos/instagram/p1-02.webp', legenda: 'Em "Configurações e atividade", desça até "Privacidade da conta".' },
+      { passo: 1, src: '/passos/instagram/p1-03.webp', legenda: 'Ative a opção "Conta privada".' },
+      { passo: 1, src: '/passos/instagram/p1-04.webp', legenda: 'Confirme a troca para conta privada.' },
+      { passo: 2, src: '/passos/instagram/p2-01.webp', legenda: 'Abra "Mensagens e respostas a stories".' },
+      { passo: 2, src: '/passos/instagram/p2-02.webp', legenda: 'Ali ficam os pedidos de contato, as respostas a stories e a proteção contra nudez.' },
+      { passo: 2, src: '/passos/instagram/p2-03.webp', legenda: 'Em "Pedidos de contato", deixe como "Ninguém".' },
+      { passo: 2, src: '/passos/instagram/p2-04.webp', legenda: 'Ative "Ocultar pedidos de contato indesejados".' },
+      { passo: 2, src: '/passos/instagram/p2-05.webp', legenda: 'Em "Respostas ao story", escolha "Não permitir respostas ao story".' },
+      { passo: 2, src: '/passos/instagram/p2-06.webp', legenda: 'Desligue "Mostrar status da atividade" para esconder quando o perfil está online.' },
+      { passo: 3, src: '/passos/instagram/p3-01.webp', legenda: 'Em "Configurações e atividade", abra "Comentários".' },
+      { passo: 3, src: '/passos/instagram/p3-02.webp', legenda: 'Decida quem pode comentar em posts, reels e stories.' },
+      { passo: 3, src: '/passos/instagram/p3-03.webp', legenda: 'Abra "Ocultar comentários indesejados".' },
+      { passo: 3, src: '/passos/instagram/p3-04.webp', legenda: 'Escolha "Mais" para que sejam ocultados mais comentários.' },
+      { passo: 3, src: '/passos/instagram/p3-05.webp', legenda: 'Desative os comentários com GIFs e com foto.' },
+      { passo: 3, src: '/passos/instagram/p3-06.webp', legenda: 'De volta à lista, abra "Palavras ocultas".' },
+      { passo: 3, src: '/passos/instagram/p3-07.webp', legenda: 'Digite as palavras a bloquear: elas passam a ser censuradas nos comentários.' },
+      { passo: 4, src: '/passos/instagram/p4-01.webp', legenda: 'Abra "Marcações e menções".' },
+      { passo: 4, src: '/passos/instagram/p4-02.webp', legenda: 'Escolha quem pode marcar e quem pode mencionar o perfil.' },
+      { passo: 4, src: '/passos/instagram/p4-03.webp', legenda: 'Ative "Aprovar marcações manualmente".' },
+      { passo: 5, src: '/passos/instagram/p5-01.webp', legenda: 'Na sua conta, abra "Supervisão para Contas de Adolescente".' },
+      { passo: 5, src: '/passos/instagram/p5-02.webp', legenda: 'Leia a apresentação e clique em "Continuar".' },
+      { passo: 5, src: '/passos/instagram/p5-03.webp', legenda: 'Selecione o perfil do menor e envie o convite.' },
+      { passo: 5, src: '/passos/instagram/p5-04.webp', legenda: 'Na conta do menor, o pedido aparece na Central da Família.' },
+      { passo: 5, src: '/passos/instagram/p5-05.webp', legenda: 'Abra o convite e clique em "Aceitar".' },
+      { passo: 6, src: '/passos/instagram/p6-01.webp', legenda: 'No painel de supervisão, clique em "Ver" no perfil do menor.' },
+      { passo: 6, src: '/passos/instagram/p6-02.webp', legenda: 'Em "Gerenciamento de tempo", defina o modo de descanso.' },
+      { passo: 6, src: '/passos/instagram/p6-03.webp', legenda: 'Escolha o limite diário de uso e salve.' },
+      { passo: 7, src: '/passos/instagram/p7-01.webp', legenda: 'Abra "Compartilhamento e reutilização" e limite os compartilhamentos do story.' },
+      { passo: 7, src: '/passos/instagram/p7-02.webp', legenda: 'Defina também se as publicações podem ser compartilhadas ou repostadas.' },
+      { passo: 8, src: '/passos/instagram/p8-01.webp', legenda: 'Em "Configurações e atividade", abra "Supervisão".' },
+      { passo: 8, src: '/passos/instagram/p8-02.webp', legenda: 'Em "Conexões" você vê com quem ele conversa, quem o segue e a localização.' },
+      { passo: 8, src: '/passos/instagram/p8-03.webp', legenda: 'Em "O que o adolescente pode ver" ficam a faixa etária e a proteção contra nudez.' },
+      { passo: 8, src: '/passos/instagram/p8-04.webp', legenda: 'E aqui você decide se ele pode fazer alterações sem a sua aprovação.' },
+    ],
   },
   {
     id: 'youtube',

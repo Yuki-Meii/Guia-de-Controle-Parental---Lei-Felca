@@ -76,7 +76,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     icon: Users,
     explicacao: 'A conta do adulto fica ligada à da criança para acompanhar e definir limites.',
     plataformas: {
-      instagram: { status: 'sim', nota: 'Supervisão Familiar' },
+      instagram: { status: 'sim', nota: 'Supervisão de Contas de Adolescente' },
       youtube: { status: 'sim', nota: 'Family Link' },
       netflix: { status: 'parcial', nota: 'Perfil infantil, sem conta separada' },
       tiktok: { status: 'sim', nota: 'Sincronização Familiar' },
@@ -88,7 +88,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     icon: Clock,
     explicacao: 'Define quantas horas por dia, e em quais horários, o aplicativo pode ser usado.',
     plataformas: {
-      instagram: { status: 'sim', nota: 'Lembretes e limite diário' },
+      instagram: { status: 'sim', nota: 'Limite diário e modo de descanso' },
       youtube: { status: 'sim', nota: 'Limite e bloqueio noturno via Family Link' },
       netflix: { status: 'nao', nota: 'Depende do limite do próprio celular' },
       tiktok: { status: 'sim', nota: 'Limite diário e horário de descanso' },
@@ -100,7 +100,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     icon: Filter,
     explicacao: 'Esconde automaticamente material inadequado para a faixa etária.',
     plataformas: {
-      instagram: { status: 'parcial', nota: 'Filtro de palavras e conteúdo sensível' },
+      instagram: { status: 'sim', nota: 'Faixa etária, palavras ocultas e nudez' },
       youtube: { status: 'sim', nota: 'Modo Restrito e faixas do YouTube Kids' },
       netflix: { status: 'sim', nota: 'Classificação indicativa por perfil' },
       tiktok: { status: 'sim', nota: 'Filtros de vídeo por palavra-chave' },
@@ -136,7 +136,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     icon: History,
     explicacao: 'Permite ao adulto ver o que foi assistido ou acessado.',
     plataformas: {
-      instagram: { status: 'parcial', nota: 'Contas seguidas e tempo de uso' },
+      instagram: { status: 'parcial', nota: 'Conversas, seguidores e tempo de uso' },
       youtube: { status: 'sim', nota: 'Histórico completo de visualização' },
       netflix: { status: 'sim', nota: 'Histórico por perfil' },
       tiktok: { status: 'parcial', nota: 'Curtidas e atividade da conta' },
