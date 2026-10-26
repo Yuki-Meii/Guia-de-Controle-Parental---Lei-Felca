@@ -186,12 +186,12 @@ export const plataformas: Platform[] = [
       {
         title: 'Defina o conteúdo liberado',
         description:
-          'No YouTube Kids, abra as configurações no canto superior direito e confirme que você é o proprietário do aparelho. Selecione o perfil da criança e confirme novamente. Em "Configurações de conteúdo", escolha "Adicionar ou remover vídeos". Na página que se abre aparecem sugestões de gêneros, canais e vídeos: selecione o que quiser liberar, clique no ícone de perfil com engrenagem, no canto inferior direito, e em "Concluído".',
+          'No YouTube Kids, abra as configurações no canto superior direito e confirme que você é o proprietário do aparelho. Selecione o perfil da criança e confirme novamente. Na seção "Configurações de conteúdo", escolha "Adicionar ou remover vídeos". Na página que se abre aparecem sugestões de gêneros, canais e vídeos: selecione o que quiser liberar, clique no ícone de perfil com engrenagem, no canto inferior direito, e em "Concluído".',
       },
       {
         title: 'Libere por faixa etária',
         description:
-          'Caso prefira deixar a criança mais livre, limitando os vídeos apenas pela idade e sem aprovação manual, entre nas configurações do perfil da criança e, em "Configurações de conteúdo", selecione "Editar configurações". Escolha a faixa de idade mais adequada e clique em "Selecionar". A partir daí o YouTube Kids passa a recomendar vídeos daquela faixa etária.',
+          'Caso prefira deixar a criança mais livre, limitando os vídeos apenas pela idade e sem aprovação manual, entre nas configurações do perfil da criança e, na seção "Configurações de conteúdo", selecione "Editar configurações". Escolha a faixa de idade mais adequada e clique em "Selecionar". A partir daí o YouTube Kids passa a recomendar vídeos daquela faixa etária.',
       },
       {
         title: 'Limite a pesquisa',
@@ -211,7 +211,6 @@ export const plataformas: Platform[] = [
     ],
     recursos: [
       'Para menores de 10 anos, prefira o YouTube Kids no modo "Aprovar o conteúdo por conta própria", que é o mais restritivo.',
-      'Informe a idade real da criança ao criar o perfil: é ela que define o catálogo que o aplicativo oferece.',
       'O timer encerra a sessão, mas quem o reinicia é você. Não deixe a confirmação de identidade ao alcance da criança.',
       'Revise o histórico junto com a criança, tratando como conversa e não como fiscalização.',
     ],
@@ -233,11 +232,11 @@ export const plataformas: Platform[] = [
       { passo: 3, src: '/passos/youtube/p3-02.webp', legenda: 'Confirme que você é o proprietário do aparelho.' },
       { passo: 3, src: '/passos/youtube/p3-03.webp', legenda: 'Selecione o perfil da criança.' },
       { passo: 3, src: '/passos/youtube/p3-04.webp', legenda: 'Confirme novamente a sua identidade.' },
-      { passo: 3, src: '/passos/youtube/p3-05.webp', legenda: 'Em "Configurações de conteúdo", escolha "Adicionar ou remover vídeos".' },
+      { passo: 3, src: '/passos/youtube/p3-05.webp', legenda: 'Na seção "Configurações de conteúdo", escolha "Adicionar ou remover vídeos".' },
       { passo: 3, src: '/passos/youtube/p3-06.webp', legenda: 'Selecione os gêneros, canais e vídeos que a criança poderá assistir.' },
       { passo: 3, src: '/passos/youtube/p3-07.webp', legenda: 'Toque no ícone de perfil com engrenagem, no canto inferior direito.' },
       { passo: 3, src: '/passos/youtube/p3-08.webp', legenda: 'Finalize em "Concluído".' },
-      { passo: 4, src: '/passos/youtube/p4-01.webp', legenda: 'Em "Configurações de conteúdo", selecione "Editar configurações".' },
+      { passo: 4, src: '/passos/youtube/p4-01.webp', legenda: 'Na seção "Configurações de conteúdo", selecione "Editar configurações".' },
       { passo: 4, src: '/passos/youtube/p4-02.webp', paisagem: true, legenda: 'Escolha a faixa de idade mais adequada para a criança.' },
       { passo: 4, src: '/passos/youtube/p4-03.webp', paisagem: true, legenda: 'Confirme em "Selecionar". O aplicativo passa a recomendar vídeos dessa faixa.' },
       { passo: 5, src: '/passos/youtube/p5-01.webp', legenda: 'Nas configurações do perfil da criança, desmarque a opção "Pesquisa".' },
@@ -249,7 +248,7 @@ export const plataformas: Platform[] = [
       { passo: 6, src: '/passos/youtube/p6-05.webp', legenda: 'Confirme a sua identidade.' },
       { passo: 6, src: '/passos/youtube/p6-06.webp', legenda: 'Escolha entre iniciar um novo timer ou sair dele.' },
       { passo: 7, src: '/passos/youtube/p7-01.webp', legenda: 'Na página inicial do YouTube Kids, acesse "Sua lista".' },
-      { passo: 7, src: '/passos/youtube/p7-02.webp', legenda: 'Nos vídeos assistidos recentemente, toque nos três pontinhos.' },
+      { passo: 7, src: '/passos/youtube/p7-02.webp', legenda: 'É mostrada uma lista dos vídeos assistidos recentemente. Para bloquear um destes, toque nos três pontinhos.' },
       { passo: 7, src: '/passos/youtube/p7-03.webp', legenda: 'Selecione "Bloquear este vídeo" para que ele não apareça mais.' },
     ],
   },
