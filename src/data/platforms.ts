@@ -24,6 +24,8 @@ export interface PlatformImage {
   passo: number;
   /** Legenda curta, exibida abaixo da imagem. */
   legenda: string;
+  /** Marque quando a captura for deitada, em plataformas que misturam as duas. */
+  paisagem?: boolean;
 }
 
 export interface Platform {
@@ -102,7 +104,6 @@ export const plataformas: Platform[] = [
       },
     ],
     recursos: [
-      'Ative a verificação em duas etapas na sua conta de responsável: é ela que autoriza qualquer mudança na supervisão.',
       'Revise a lista de seguidores junto com o adolescente e remova contas desconhecidas.',
       'Combine que solicitações de mensagem de estranhos não devem ser respondidas, nem por curiosidade.',
       'Confira as configurações depois de cada atualização grande do aplicativo.',
@@ -168,51 +169,89 @@ export const plataformas: Platform[] = [
     icon: Youtube,
     color: 'text-red-600',
     gradient: 'from-red-500 via-red-500 to-rose-600',
-    tagline: 'Controle parental e YouTube Kids',
+    tagline: 'YouTube Kids e controle de conteúdo',
     descricao:
-      'Use o YouTube Kids, configure a supervisão familiar, defina restrições de conteúdo e monitore o histórico de visualização dos menores.',
+      'Instale o YouTube Kids, crie o perfil da criança, escolha o que ela pode assistir, limite a pesquisa e o tempo de uso, e acompanhe o histórico.',
     steps: [
       {
-        title: 'Utilize o YouTube Kids',
+        title: 'Use o YouTube Kids',
         description:
-          'Baixe o app YouTube Kids, projetado para crianças, com conteúdo curado e interfaces mais simples e seguras para menores.',
+          'O primeiro passo é escolher o aplicativo certo para a idade. Para crianças menores, em vez do YouTube comum, baixe o YouTube Kids na loja de aplicativos do celular. Ele é um aplicativo separado, com um catálogo bem mais restrito e uma tela mais simples.',
       },
       {
-        title: 'Configure a supervisão familiar',
+        title: 'Crie o perfil infantil',
         description:
-          'Crie uma Conta do Google para a criança e vincule-a à sua conta pelo Family Link para gerenciar acessos e aprovações de conteúdo.',
+          'Ao abrir pela primeira vez, o YouTube Kids pede uma conta do Google como responsável. Clique em "Vamos começar" e depois na seta no canto inferior direito. Selecione a conta do responsável, clique em "Fazer login" e concorde com os termos. Em seguida crie o perfil informando o nome da criança, a idade e o mês de nascimento, e defina a faixa etária: Pré-escolar, até 4 anos; Crianças menores, de 5 a 8; ou Crianças maiores, de 9 a 12. Para o controle mais fechado, escolha "Aprovar o conteúdo por conta própria", em que só aparece o que você liberar. Depois clique em "Selecionar".',
       },
       {
-        title: 'Defina restrições de conteúdo',
+        title: 'Defina o conteúdo liberado',
         description:
-          'No YouTube Kids, escolha a faixa etária (Pré-escola, Escolar, Mais antigos) ou ative o modo "Apenas conteúdo aprovado" para máxima segurança.',
+          'No YouTube Kids, abra as configurações no canto superior direito e confirme que você é o proprietário do aparelho. Selecione o perfil da criança e confirme novamente. Em "Configurações de conteúdo", escolha "Adicionar ou remover vídeos". Na página que se abre aparecem sugestões de gêneros, canais e vídeos: selecione o que quiser liberar, clique no ícone de perfil com engrenagem, no canto inferior direito, e em "Concluído".',
       },
       {
-        title: 'Monitore o histórico de visualização',
+        title: 'Libere por faixa etária',
         description:
-          'Acompanhe os vídeos assistidos através do histórico da conta vinculada, identificando padrões e conteúdos inadequados.',
+          'Caso prefira deixar a criança mais livre, limitando os vídeos apenas pela idade e sem aprovação manual, entre nas configurações do perfil da criança e, em "Configurações de conteúdo", selecione "Editar configurações". Escolha a faixa de idade mais adequada e clique em "Selecionar". A partir daí o YouTube Kids passa a recomendar vídeos daquela faixa etária.',
       },
       {
-        title: 'Controle o tempo de uso',
+        title: 'Limite a pesquisa',
         description:
-          'Defina limites diários de tempo de tela pelo Family Link e bloqueie o acesso ao YouTube em horários específicos, como hora de dormir.',
+          'Com o conteúdo liberado por faixa etária, a pesquisa fica disponível. Ainda nas configurações do perfil da criança, desmarque a opção "Pesquisa". Assim ela continua recebendo as recomendações, mas não consegue procurar vídeos por conta própria.',
       },
       {
-        title: 'Ative o Modo Restrito',
+        title: 'Defina um limite de tempo',
         description:
-          'No YouTube padrão, ative o Modo Restrito em Configurações > Geral para ocultar vídeos com conteúdo potencialmente inadequado.',
+          'O YouTube Kids traz um cronômetro que encerra a sessão quando o tempo acaba. Nas configurações gerais do aplicativo, na seção "Conta", acesse "Definir timer" e escolha quanto tempo a criança pode usar. Quando o tempo se esgota, o aplicativo avisa e não deixa continuar. Para liberar mais tempo, toque na engrenagem no canto inferior direito, confirme sua identidade e escolha entre iniciar um novo timer ou sair dele.',
+      },
+      {
+        title: 'Verifique o histórico de vídeos',
+        description:
+          'Mesmo com os vídeos filtrados pela faixa etária e a pesquisa desativada, vale conferir o que a criança anda assistindo, porque algum conteúdo pode escapar da verificação do YouTube. Na página inicial do YouTube Kids, acesse "Sua lista": ali aparecem os vídeos assistidos recentemente. Para bloquear algum deles, toque nos três pontinhos e em "Bloquear este vídeo".',
       },
     ],
     recursos: [
-      'Para menores de 10 anos, prefira o YouTube Kids no modo "Apenas conteúdo aprovado", que é o mais restritivo.',
-      'O Modo Restrito precisa ser ativado em cada navegador e aparelho separadamente — ativar no celular não cobre o computador.',
-      'Desative a reprodução automática: é ela que faz um vídeo seguro emendar em outro inadequado.',
+      'Para menores de 10 anos, prefira o YouTube Kids no modo "Aprovar o conteúdo por conta própria", que é o mais restritivo.',
+      'Informe a idade real da criança ao criar o perfil: é ela que define o catálogo que o aplicativo oferece.',
+      'O timer encerra a sessão, mas quem o reinicia é você. Não deixe a confirmação de identidade ao alcance da criança.',
       'Revise o histórico junto com a criança, tratando como conversa e não como fiscalização.',
     ],
     video: {
       title: 'Como configurar o YouTube Kids',
       src: 'https://www.youtube-nocookie.com/embed/KpF0S4Wglyc',
     },
+    imagens: [
+      { passo: 1, src: '/passos/youtube/p1-01.webp', legenda: 'Na loja de aplicativos do celular, procure o YouTube Kids e toque em "Instalar".' },
+      { passo: 2, src: '/passos/youtube/p2-01.webp', paisagem: true, legenda: 'Ao abrir o aplicativo pela primeira vez, toque em "Vamos começar".' },
+      { passo: 2, src: '/passos/youtube/p2-02.webp', paisagem: true, legenda: 'Avance pela seta no canto inferior direito.' },
+      { passo: 2, src: '/passos/youtube/p2-03.webp', paisagem: true, legenda: 'Selecione a conta do Google do responsável e clique em "Fazer login".' },
+      { passo: 2, src: '/passos/youtube/p2-04.webp', paisagem: true, legenda: 'Leia e concorde com os termos para os responsáveis.' },
+      { passo: 2, src: '/passos/youtube/p2-05.webp', paisagem: true, legenda: 'Crie o perfil informando o nome da criança, a idade e o mês de nascimento.' },
+      { passo: 2, src: '/passos/youtube/p2-06.webp', paisagem: true, legenda: 'Defina a faixa etária: Pré-escolar, Crianças menores ou Crianças maiores.' },
+      { passo: 2, src: '/passos/youtube/p2-07.webp', paisagem: true, legenda: 'Para o controle mais fechado, escolha "Aprovar o conteúdo por conta própria".' },
+      { passo: 2, src: '/passos/youtube/p2-08.webp', paisagem: true, legenda: 'Confirme a escolha clicando em "Selecionar".' },
+      { passo: 3, src: '/passos/youtube/p3-01.webp', legenda: 'No YouTube Kids, abra as configurações no canto superior direito.' },
+      { passo: 3, src: '/passos/youtube/p3-02.webp', legenda: 'Confirme que você é o proprietário do aparelho.' },
+      { passo: 3, src: '/passos/youtube/p3-03.webp', legenda: 'Selecione o perfil da criança.' },
+      { passo: 3, src: '/passos/youtube/p3-04.webp', legenda: 'Confirme novamente a sua identidade.' },
+      { passo: 3, src: '/passos/youtube/p3-05.webp', legenda: 'Em "Configurações de conteúdo", escolha "Adicionar ou remover vídeos".' },
+      { passo: 3, src: '/passos/youtube/p3-06.webp', legenda: 'Selecione os gêneros, canais e vídeos que a criança poderá assistir.' },
+      { passo: 3, src: '/passos/youtube/p3-07.webp', legenda: 'Toque no ícone de perfil com engrenagem, no canto inferior direito.' },
+      { passo: 3, src: '/passos/youtube/p3-08.webp', legenda: 'Finalize em "Concluído".' },
+      { passo: 4, src: '/passos/youtube/p4-01.webp', legenda: 'Em "Configurações de conteúdo", selecione "Editar configurações".' },
+      { passo: 4, src: '/passos/youtube/p4-02.webp', paisagem: true, legenda: 'Escolha a faixa de idade mais adequada para a criança.' },
+      { passo: 4, src: '/passos/youtube/p4-03.webp', paisagem: true, legenda: 'Confirme em "Selecionar". O aplicativo passa a recomendar vídeos dessa faixa.' },
+      { passo: 5, src: '/passos/youtube/p5-01.webp', legenda: 'Nas configurações do perfil da criança, desmarque a opção "Pesquisa".' },
+      { passo: 5, src: '/passos/youtube/p5-02.webp', legenda: 'Confirme em "OK". Ela continua recebendo recomendações, mas não pesquisa.' },
+      { passo: 6, src: '/passos/youtube/p6-01.webp', legenda: 'Nas configurações gerais, na seção "Conta", acesse "Definir timer".' },
+      { passo: 6, src: '/passos/youtube/p6-02.webp', legenda: 'Escolha quanto tempo a criança pode usar e inicie o timer.' },
+      { passo: 6, src: '/passos/youtube/p6-03.webp', legenda: 'Quando o tempo acaba, o aplicativo avisa e não deixa continuar assistindo.' },
+      { passo: 6, src: '/passos/youtube/p6-04.webp', legenda: 'Para liberar mais tempo, toque na engrenagem no canto inferior direito.' },
+      { passo: 6, src: '/passos/youtube/p6-05.webp', legenda: 'Confirme a sua identidade.' },
+      { passo: 6, src: '/passos/youtube/p6-06.webp', legenda: 'Escolha entre iniciar um novo timer ou sair dele.' },
+      { passo: 7, src: '/passos/youtube/p7-01.webp', legenda: 'Na página inicial do YouTube Kids, acesse "Sua lista".' },
+      { passo: 7, src: '/passos/youtube/p7-02.webp', legenda: 'Nos vídeos assistidos recentemente, toque nos três pontinhos.' },
+      { passo: 7, src: '/passos/youtube/p7-03.webp', legenda: 'Selecione "Bloquear este vídeo" para que ele não apareça mais.' },
+    ],
   },
   {
     id: 'netflix',

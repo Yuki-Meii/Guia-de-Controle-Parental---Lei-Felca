@@ -22,7 +22,16 @@ export function CarrosselPassos({
 
   const total = imagens.length;
   const imagem = imagens[atual];
-  const retrato = formato === 'retrato';
+  // A imagem pode trazer a própria orientação, para plataformas que misturam
+  // capturas em pé e deitadas; sem isso, vale a orientação da plataforma.
+  const retrato = imagem.paisagem === undefined ? formato === 'retrato' : !imagem.paisagem;
+
+  // Reservar a proporção certa evita que o bloco salte enquanto a imagem carrega.
+  const medida = retrato
+    ? { largura: 480, altura: 1040 }
+    : imagem.paisagem
+      ? { largura: 960, altura: 442 }
+      : { largura: 960, altura: 540 };
 
   // Forma funcional: garante o passo certo mesmo em cliques rápidos seguidos.
   const mover = (passos: number) => {
@@ -99,8 +108,8 @@ export function CarrosselPassos({
               key={imagem.src}
               src={imagem.src}
               alt={`Passo ${imagem.passo}: ${imagem.legenda}`}
-              width={retrato ? 480 : 960}
-              height={retrato ? 1040 : 540}
+              width={medida.largura}
+              height={medida.altura}
               loading={atual === 0 ? 'eager' : 'lazy'}
               className="block w-full"
             />

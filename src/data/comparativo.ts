@@ -25,7 +25,7 @@ export const idadesMinimas: IdadeMinima[] = [
   {
     plataformaId: 'youtube',
     idade: '13 anos',
-    observacao: 'Abaixo disso, o caminho é o YouTube Kids com conta supervisionada.',
+    observacao: 'Abaixo disso, o caminho é o YouTube Kids, com perfil criado pelo responsável.',
   },
   {
     plataformaId: 'netflix',
@@ -65,7 +65,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     explicacao: 'Só quem você aprova consegue ver o que a criança publica.',
     plataformas: {
       instagram: { status: 'sim', nota: 'Conta privada nas configurações' },
-      youtube: { status: 'parcial', nota: 'Vídeos e playlists podem ser privados' },
+      youtube: { status: 'nao', nota: 'Não há publicação no YouTube Kids' },
       netflix: { status: 'nao', nota: 'Não há publicação de conteúdo' },
       tiktok: { status: 'sim', nota: 'Padrão para contas de 13 a 15 anos' },
       steam: { status: 'sim', nota: 'Perfil e amigos pelos controles parentais' },
@@ -77,7 +77,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     explicacao: 'A conta do adulto fica ligada à da criança para acompanhar e definir limites.',
     plataformas: {
       instagram: { status: 'sim', nota: 'Supervisão de Contas de Adolescente' },
-      youtube: { status: 'sim', nota: 'Family Link' },
+      youtube: { status: 'sim', nota: 'Perfil criado dentro da conta do responsável' },
       netflix: { status: 'parcial', nota: 'Perfil infantil, sem conta separada' },
       tiktok: { status: 'sim', nota: 'Sincronização Familiar' },
       steam: { status: 'sim', nota: 'Família Steam, com conta própria' },
@@ -89,7 +89,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     explicacao: 'Define quantas horas por dia, e em quais horários, o aplicativo pode ser usado.',
     plataformas: {
       instagram: { status: 'sim', nota: 'Limite diário e modo de descanso' },
-      youtube: { status: 'sim', nota: 'Limite e bloqueio noturno via Family Link' },
+      youtube: { status: 'sim', nota: 'Timer dentro do aplicativo' },
       netflix: { status: 'nao', nota: 'Depende do limite do próprio celular' },
       tiktok: { status: 'sim', nota: 'Limite diário e horário de descanso' },
       steam: { status: 'sim', nota: 'Limites por dia da semana' },
@@ -101,7 +101,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     explicacao: 'Esconde automaticamente material inadequado para a faixa etária.',
     plataformas: {
       instagram: { status: 'sim', nota: 'Faixa etária, palavras ocultas e nudez' },
-      youtube: { status: 'sim', nota: 'Modo Restrito e faixas do YouTube Kids' },
+      youtube: { status: 'sim', nota: 'Faixa etária ou aprovação manual dos vídeos' },
       netflix: { status: 'sim', nota: 'Classificação indicativa por perfil' },
       tiktok: { status: 'sim', nota: 'Filtros de vídeo por palavra-chave' },
       steam: { status: 'sim', nota: 'Jogos permitidos e filtros de conteúdo' },
@@ -113,7 +113,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     explicacao: 'Impede que desconhecidos entrem em contato direto com a criança.',
     plataformas: {
       instagram: { status: 'sim', nota: 'Restringe quem envia mensagem direta' },
-      youtube: { status: 'parcial', nota: 'Comentários; não há mensagem privada' },
+      youtube: { status: 'nao', nota: 'Não há comentários nem mensagens' },
       netflix: { status: 'nao', nota: 'Não há contato entre usuários' },
       tiktok: { status: 'sim', nota: 'Mensagens limitadas ou desativadas' },
       steam: { status: 'sim', nota: 'Bloqueio de chat, amigos e grupos' },
@@ -125,7 +125,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     explicacao: 'Exige senha ou PIN antes de qualquer cobrança no cartão.',
     plataformas: {
       instagram: { status: 'nao', nota: 'Sem trava específica de compra' },
-      youtube: { status: 'sim', nota: 'Aprovação de compras pelo Family Link' },
+      youtube: { status: 'nao', nota: 'O YouTube Kids não tem loja' },
       netflix: { status: 'parcial', nota: 'PIN protege a troca de plano' },
       tiktok: { status: 'parcial', nota: 'Depende da trava da loja do celular' },
       steam: { status: 'sim', nota: 'Pedidos aprovados pelo responsável' },
@@ -137,7 +137,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     explicacao: 'Permite ao adulto ver o que foi assistido ou acessado.',
     plataformas: {
       instagram: { status: 'parcial', nota: 'Conversas, seguidores e tempo de uso' },
-      youtube: { status: 'sim', nota: 'Histórico completo de visualização' },
+      youtube: { status: 'sim', nota: 'Lista de vídeos assistidos' },
       netflix: { status: 'sim', nota: 'Histórico por perfil' },
       tiktok: { status: 'parcial', nota: 'Curtidas e atividade da conta' },
       steam: { status: 'sim', nota: 'Tempo de jogo e histórico da família' },
