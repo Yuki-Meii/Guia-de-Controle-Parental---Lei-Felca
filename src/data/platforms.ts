@@ -216,7 +216,7 @@ export const plataformas: Platform[] = [
     ],
     video: {
       title: 'Como configurar o YouTube Kids',
-      src: 'https://www.youtube-nocookie.com/embed/KpF0S4Wglyc',
+      src: 'https://www.youtube-nocookie.com/embed/jXCt_P_iIKA',
     },
     imagens: [
       { passo: 1, src: '/passos/youtube/p1-01.webp', legenda: 'Na loja de aplicativos do celular, procure o YouTube Kids e toque em "Instalar".' },
@@ -417,46 +417,88 @@ export const plataformas: Platform[] = [
     icon: Music2,
     color: 'text-slate-900',
     gradient: 'from-slate-800 via-slate-900 to-black',
-    tagline: 'Sincronização Familiar e controles',
+    tagline: 'Sincronização Familiar e tempo de tela',
     descricao:
-      'Ative a Sincronização Familiar, restrinja mensagens e comentários, controle o tempo de tela e proteja o conteúdo visualizado por menores no TikTok.',
+      'Ative a Sincronização Familiar, deixe a conta privada, limite o tempo de tela e as notificações, revise as conexões e filtre o conteúdo do feed.',
     steps: [
       {
         title: 'Ative a Sincronização Familiar',
         description:
-          'Em Configurações > Sincronização Familiar, vincule a conta do adolescente à do responsável para definir limites e monitorar a atividade.',
+          'É ela que libera todos os outros controles. No seu celular, toque em "Perfil", no canto inferior direito, e depois no menu de três riscos, no canto superior direito. Entre em "Configurações e privacidade", procure "Sincronização Familiar" e escolha "Continuar como responsável". Na barra de pesquisa, informe o nome de usuário do adolescente e clique em convidar. Na conta dele, abra "Mensagens", selecione "Notificações do sistema", abra o convite e toque em "Aceitar". A partir daí as duas contas ficam vinculadas.',
       },
       {
-        title: 'Defina a conta como privada',
+        title: 'Deixe a conta privada',
         description:
-          'Em Configurações > Privacidade, ative "Conta privada" para que apenas seguidores aprovados possam ver os vídeos publicados.',
-      },
-      {
-        title: 'Restrinja mensagens e comentários',
-        description:
-          'Em Privacidade, limite quem pode enviar mensagens diretas e comentar nos vídeos, escolhendo "Amigos" ou desativando completamente para menores.',
+          'Em "Configurações e privacidade", abra "Sincronização Familiar" e selecione o perfil do adolescente. Acesse "Privacidade da conta" e ative "Conta privada": só quem for aprovado passa a ver os vídeos publicados. Contas de 13 a 15 anos já vêm privadas por padrão, mas vale conferir. Na mesma tela dá para desativar a sugestão da conta a outras pessoas e deixar os vídeos curtidos visíveis apenas para o próprio adolescente.',
       },
       {
         title: 'Controle o tempo de tela',
         description:
-          'Use a Sincronização Familiar para definir limites diários de uso e horários de bloqueio, como durante o horário escolar ou à noite.',
+          'Ainda na "Sincronização Familiar", selecione o perfil do adolescente e clique na seta ao lado da média diária de tempo de tela. Ali aparece quanto ele usou o aplicativo na última semana. Ative "Tempo de tela diário", escolha o limite — de 10 minutos a 2 horas — e confirme. Em "Agendar pausa programada", ative a opção, escolha o dia e defina os horários de início e fim do bloqueio. Para salvar, basta voltar à página anterior.',
       },
       {
-        title: 'Ative o Filtro de conteúdo',
+        title: 'Desative as notificações',
         description:
-          'Em Configurações > Privacidade > Filtros de vídeos, adicione palavras-chave e hashtags para ocultar conteúdos inadequados do feed "Para você".',
+          'As notificações são o que puxa o adolescente de volta ao aplicativo. Ainda na página de "Tempo de tela", selecione "Cronograma de notificações push" e ative "Definir um cronograma". Escolha o período em que as notificações devem ficar desligadas e clique em "Concluído".',
       },
       {
-        title: 'Revise a atividade da conta',
+        title: 'Verifique as conexões',
         description:
-          'Acompanhe os vídeos curtidos, comentados e compartilhados pela conta vinculada para identificar padrões e conteúdos potencialmente inadequados.',
+          'Ainda na "Sincronização Familiar", acesse "Conexões". Ali você vê as contas em que ambos se seguem, quem ele segue e quem o segue. Em "Mensagens diretas" você define quem pode mandar mensagem: para menores de 16 anos a opção já vem como "Não receber". Em "Gerenciar contas bloqueadas", escolha "Bloquear contas", pesquise o usuário, clique em "Bloquear conta" e confirme.',
+      },
+      {
+        title: 'Filtre o conteúdo',
+        description:
+          'Ainda na "Sincronização Familiar", acesse "Interesses de conteúdo". Em "Ver tópicos gerenciados" você define que assuntos aparecem mais ou menos. Em "Filtrar palavras-chave", clique em "Começar" e depois em "Adicionar palavra-chave" para bloquear vídeos que tragam aquela palavra no título, na descrição ou nos adesivos. O "feed STEAM" traz mais vídeos de ciência, tecnologia, engenharia e matemática. Já o "Modo Restrito" filtra o feed com mais rigor e impede o adolescente de trocar ou sair da conta. Para desativar a busca, abra "Procurar" e escolha "Desativado".',
+      },
+      {
+        title: 'Restrinja a visibilidade dos vídeos',
+        description:
+          'Por último, limite o acesso de estranhos ao que já foi publicado. Em "Configurações e privacidade", acesse "Gerenciar publicações" e clique em "Gerenciar a visibilidade da publicação". Aparece a lista dos vídeos: escolha um, defina quem pode vê-lo — seguidores, amigos ou apenas o próprio adolescente — e clique em "Atualizar".',
       },
     ],
     recursos: [
-      'Inicie a Sincronização Familiar pelo seu celular: ela exige confirmação nos dois aparelhos.',
-      'O horário de descanso é a configuração mais eficaz contra o uso na madrugada.',
-      'Vá acrescentando palavras-chave ao filtro conforme perceber o que aparece no feed da criança.',
+      'Para convidar, você precisa do nome de usuário do adolescente, e ele precisa aceitar o convite no próprio aparelho.',
+      'A pausa programada é a configuração mais eficaz contra o uso na madrugada.',
+      'Vá acrescentando palavras-chave ao filtro conforme perceber o que aparece no feed dele.',
       'Converse sobre desafios virais: o filtro não bloqueia o que ainda não tem nome.',
+    ],
+    imagens: [
+      { passo: 1, src: '/passos/tiktok/p1-01.webp', legenda: 'No seu celular, toque em "Perfil", no canto inferior direito.' },
+      { passo: 1, src: '/passos/tiktok/p1-02.webp', legenda: 'Abra o menu de três riscos, no canto superior direito.' },
+      { passo: 1, src: '/passos/tiktok/p1-03.webp', legenda: 'Entre em "Configurações e privacidade".' },
+      { passo: 1, src: '/passos/tiktok/p1-04.webp', legenda: 'Procure e abra "Sincronização Familiar".' },
+      { passo: 1, src: '/passos/tiktok/p1-05.webp', legenda: 'Escolha "Continuar como responsável".' },
+      { passo: 1, src: '/passos/tiktok/p1-06.webp', legenda: 'Informe o nome de usuário do adolescente na busca e clique em "Convidar".' },
+      { passo: 1, src: '/passos/tiktok/p1-07.webp', legenda: 'Na conta do adolescente, abra "Mensagens".' },
+      { passo: 1, src: '/passos/tiktok/p1-08.webp', legenda: 'Selecione "Notificações do sistema".' },
+      { passo: 1, src: '/passos/tiktok/p1-09.webp', legenda: 'Abra a notificação com o convite.' },
+      { passo: 1, src: '/passos/tiktok/p1-10.webp', legenda: 'Toque em "Aceitar". A partir daí as duas contas ficam vinculadas.' },
+      { passo: 2, src: '/passos/tiktok/p2-01.webp', legenda: 'No seu perfil, entre em "Configurações e privacidade".' },
+      { passo: 2, src: '/passos/tiktok/p2-02.webp', legenda: 'Abra "Sincronização Familiar".' },
+      { passo: 2, src: '/passos/tiktok/p2-03.webp', legenda: 'Selecione o perfil do adolescente.' },
+      { passo: 2, src: '/passos/tiktok/p2-04.webp', legenda: 'Acesse "Privacidade da conta".' },
+      { passo: 2, src: '/passos/tiktok/p2-05.webp', legenda: 'Ative a opção "Conta privada".' },
+      { passo: 2, src: '/passos/tiktok/p2-06.webp', legenda: 'Desative "Sugerir a conta a outras pessoas".' },
+      { passo: 2, src: '/passos/tiktok/p2-07.webp', legenda: 'Abra "Vídeos curtidos" para escolher quem pode vê-los.' },
+      { passo: 2, src: '/passos/tiktok/p2-08.webp', legenda: 'Selecione "Apenas seu filho adolescente".' },
+      { passo: 3, src: '/passos/tiktok/p3-01.webp', legenda: 'No seu perfil, entre em "Configurações e privacidade".' },
+      { passo: 3, src: '/passos/tiktok/p3-02.webp', legenda: 'Abra "Sincronização Familiar".' },
+      { passo: 3, src: '/passos/tiktok/p3-03.webp', legenda: 'Selecione o perfil do adolescente.' },
+      { passo: 3, src: '/passos/tiktok/p3-04.webp', legenda: 'Clique na seta ao lado da média diária de tempo de tela.' },
+      { passo: 3, src: '/passos/tiktok/p3-05.webp', legenda: 'Aqui aparece quanto ele usou o aplicativo na última semana.' },
+      { passo: 3, src: '/passos/tiktok/p3-06.webp', legenda: 'Ative a opção "Tempo de tela diário".' },
+      { passo: 3, src: '/passos/tiktok/p3-07.webp', legenda: 'Escolha o limite, de 10 minutos a 2 horas, e toque em "Confirmar".' },
+      { passo: 3, src: '/passos/tiktok/p3-08.webp', legenda: 'Em seguida, abra "Agendar pausa programada".' },
+      { passo: 3, src: '/passos/tiktok/p3-09.webp', legenda: 'Ative a opção.' },
+      { passo: 3, src: '/passos/tiktok/p3-10.webp', legenda: 'Selecione o dia em que o bloqueio deve valer.' },
+      { passo: 3, src: '/passos/tiktok/p3-11.webp', legenda: 'Defina o horário de início do bloqueio.' },
+      { passo: 3, src: '/passos/tiktok/p3-12.webp', legenda: 'Defina o horário de término.' },
+      { passo: 3, src: '/passos/tiktok/p3-13.webp', legenda: 'Para salvar, basta voltar à página anterior.' },
+      { passo: 3, src: '/passos/tiktok/p3-14.webp', legenda: 'Com o tempo definido, a próxima opção da lista é o cronograma de notificações.' },
+      { passo: 4, src: '/passos/tiktok/p4-01.webp', legenda: 'Ainda em "Tempo de tela", selecione "Cronograma de notificações push".' },
+      { passo: 4, src: '/passos/tiktok/p4-02.webp', legenda: 'Ative a opção "Definir um cronograma".' },
+      { passo: 4, src: '/passos/tiktok/p4-03.webp', legenda: 'Escolha o período sem notificações e clique em "Concluído".' },
     ],
   },
 ];
