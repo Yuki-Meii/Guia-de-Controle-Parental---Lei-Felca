@@ -47,10 +47,6 @@ export interface Platform {
   formatoImagens?: 'retrato' | 'paisagem';
 }
 
-// Para vincular a videoaula de um tutorial, preencha a chave "video" com o título e
-// o endereço de incorporação, substituindo o código após "/embed/" pelo identificador
-// do vídeo. Plataformas sem essa chave exibem o aviso de gravação em produção.
-
 export const plataformas: Platform[] = [
   {
     id: 'instagram',
