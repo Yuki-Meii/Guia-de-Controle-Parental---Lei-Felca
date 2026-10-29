@@ -11,7 +11,8 @@ Projeto desenvolvido para a unidade curricular **Atividade Extensionista II**.
   linguagem cotidiana, identificados pelos princípios de Privacy by Default,
   Anti-Uso Compulsivo, Filtro de Conteúdo e Supervisão Parental.
 - **Cinco tutoriais passo a passo** — Instagram, YouTube, Netflix, Steam e TikTok,
-  com seis passos objetivos cada e recomendações específicas por plataforma.
+  de seis a oito passos cada, com videoaula própria, carrossel de capturas de tela
+  e recomendações específicas por plataforma.
 - **Comparativo visual** — sete ferramentas de proteção confrontadas entre as cinco
   plataformas, além da idade mínima de cada uma.
 - **Perguntas frequentes** — dez dúvidas comuns de responsáveis e os canais oficiais
@@ -70,6 +71,7 @@ src/
 │   ├── Hero.tsx              abertura da página inicial
 │   ├── PlatformCard.tsx      cards das plataformas
 │   ├── PlatformPage.tsx      página de tutorial
+│   ├── CarrosselPassos.tsx   carrossel das capturas de tela
 │   ├── FelcaSection.tsx      página da legislação
 │   ├── ComparativoSection.tsx  quadro comparativo
 │   └── FaqSection.tsx        perguntas frequentes
