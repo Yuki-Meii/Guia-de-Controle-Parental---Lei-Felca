@@ -68,7 +68,7 @@ export const linhasComparativo: LinhaComparativo[] = [
       youtube: { status: 'nao', nota: 'Não há publicação no YouTube Kids' },
       netflix: { status: 'nao', nota: 'Não há publicação de conteúdo' },
       tiktok: { status: 'sim', nota: 'Padrão para contas de 13 a 15 anos' },
-      steam: { status: 'sim', nota: 'Perfil e amigos pelos controles parentais' },
+      steam: { status: 'parcial', nota: 'Nas configurações da conta, fora deste guia' },
     },
   },
   {
@@ -88,7 +88,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     icon: Clock,
     explicacao: 'Define quantas horas por dia, e em quais horários, o aplicativo pode ser usado.',
     plataformas: {
-      instagram: { status: 'sim', nota: 'Limite diário e modo de descanso' },
+      instagram: { status: 'sim', nota: 'Limite diário e horários de pausa' },
       youtube: { status: 'sim', nota: 'Timer dentro do aplicativo' },
       netflix: { status: 'nao', nota: 'Depende do limite do próprio celular' },
       tiktok: { status: 'sim', nota: 'Tempo de tela diário e pausa programada' },
@@ -126,7 +126,7 @@ export const linhasComparativo: LinhaComparativo[] = [
     plataformas: {
       instagram: { status: 'nao', nota: 'Sem trava específica de compra' },
       youtube: { status: 'nao', nota: 'O YouTube Kids não tem loja' },
-      netflix: { status: 'parcial', nota: 'PIN protege a troca de plano' },
+      netflix: { status: 'parcial', nota: 'PIN impede sair do perfil infantil' },
       tiktok: { status: 'parcial', nota: 'Depende da trava da loja do celular' },
       steam: { status: 'sim', nota: 'Pedidos aprovados pelo responsável' },
     },
