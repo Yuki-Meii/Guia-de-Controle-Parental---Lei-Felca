@@ -444,12 +444,12 @@ export const plataformas: Platform[] = [
       {
         title: 'Verifique as conexões',
         description:
-          'Ainda na "Sincronização Familiar", acesse "Conexões". Ali você vê as contas em que ambos se seguem, quem ele segue e quem o segue. Em "Mensagens diretas" você define quem pode mandar mensagem: para menores de 16 anos a opção já vem como "Não receber". Em "Gerenciar contas bloqueadas", escolha "Bloquear contas", pesquise o usuário, clique em "Bloquear conta" e confirme.',
+          'Ainda na "Sincronização Familiar", acesse "Conexões". Ali você vê as contas em que ambos se seguem, quem ele segue e quem o segue. Em "Mensagens diretas" você define quem pode mandar mensagem, sendo filtrado entre amigos, conexões em potencial e outras pessoas no TikTok: para menores de 16 anos as opções já vêm como "Não receber". Para bloquear usuários, em "Gerenciar contas bloqueadas", escolha "Bloquear contas", pesquise o usuário, clique em "Bloquear conta" e confirme.',
       },
       {
         title: 'Filtre o conteúdo',
         description:
-          'Ainda na "Sincronização Familiar", acesse "Interesses de conteúdo". Em "Ver tópicos gerenciados" você define que assuntos aparecem mais ou menos. Em "Filtrar palavras-chave", clique em "Começar" e depois em "Adicionar palavra-chave" para bloquear vídeos que tragam aquela palavra no título, na descrição ou nos adesivos. O "feed STEAM" traz mais vídeos de ciência, tecnologia, engenharia e matemática. Já o "Modo Restrito" filtra o feed com mais rigor e impede o adolescente de trocar ou sair da conta. Para desativar a busca, abra "Procurar" e escolha "Desativado".',
+          'Para filtrar o que aparece no feed, ainda na "Sincronização Familiar", acesse "Interesses de conteúdo". Em "Ver tópicos gerenciados" você define que assuntos aparecem mais ou menos. Em "Filtrar palavras-chave", clique em "Começar" e depois, em "Adicionar palavra-chave", digite as palavras desejadas para bloquear vídeos que as tragam no título, na descrição ou nos adesivos, e clique em "Salvar". O "feed STEM" traz mais vídeos de ciência, tecnologia, engenharia e matemática: clique em "Ativar para" para ligá-lo. Já o "Modo Restrito" filtra o feed com mais rigor e impede o adolescente de trocar ou sair da conta; para isso, clique em "Ativar para". Para desativar a busca, selecione "Procurar" e escolha "Desativado".',
       },
       {
         title: 'Restrinja a visibilidade dos vídeos',
@@ -488,14 +488,13 @@ export const plataformas: Platform[] = [
       { passo: 3, src: '/passos/tiktok/p3-04.webp', legenda: 'Clique na seta ao lado da média diária de tempo de tela.' },
       { passo: 3, src: '/passos/tiktok/p3-05.webp', legenda: 'Aqui aparece quanto ele usou o aplicativo na última semana.' },
       { passo: 3, src: '/passos/tiktok/p3-06.webp', legenda: 'Ative a opção "Tempo de tela diário".' },
-      { passo: 3, src: '/passos/tiktok/p3-07.webp', legenda: 'Escolha o limite, de 10 minutos a 2 horas, e toque em "Confirmar".' },
+      { passo: 3, src: '/passos/tiktok/p3-07.webp', legenda: 'Abra "Tempo de tela diário" e escolha o limite, de 10 minutos a 2 horas, e toque em "Confirmar".' },
       { passo: 3, src: '/passos/tiktok/p3-08.webp', legenda: 'Em seguida, abra "Agendar pausa programada".' },
       { passo: 3, src: '/passos/tiktok/p3-09.webp', legenda: 'Ative a opção.' },
       { passo: 3, src: '/passos/tiktok/p3-10.webp', legenda: 'Selecione o dia em que o bloqueio deve valer.' },
       { passo: 3, src: '/passos/tiktok/p3-11.webp', legenda: 'Defina o horário de início do bloqueio.' },
       { passo: 3, src: '/passos/tiktok/p3-12.webp', legenda: 'Defina o horário de término.' },
       { passo: 3, src: '/passos/tiktok/p3-13.webp', legenda: 'Para salvar, basta voltar à página anterior.' },
-      { passo: 3, src: '/passos/tiktok/p3-14.webp', legenda: 'Com o tempo definido, a próxima opção da lista é o cronograma de notificações.' },
       { passo: 4, src: '/passos/tiktok/p4-01.webp', legenda: 'Ainda em "Tempo de tela", selecione "Cronograma de notificações push".' },
       { passo: 4, src: '/passos/tiktok/p4-02.webp', legenda: 'Ative a opção "Definir um cronograma".' },
       { passo: 4, src: '/passos/tiktok/p4-03.webp', legenda: 'Escolha o período sem notificações e clique em "Concluído".' },
